@@ -1,0 +1,53 @@
+body{
+  background: #decccc;
+}
+header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  background: #e67a7a;
+  input {
+    height: 25px;
+    width: 80%;
+    padding: 5px;
+    &:focus {
+      outline: 0;
+      border: 2px solid #da4b4b;
+    }
+  }
+}
+
+main {
+  height: 72vh;
+  overflow: scroll;
+}
+
+#task-list {
+  padding: 0;
+  margin: 0;
+  li {
+    width: 100%;
+    background: #fff;
+    list-style-type: none;
+    padding: 1.5%;
+    border-bottom: 1px solid #decccc;
+  }
+}
+
+#trash {
+  float: right;
+}
+
+#check {
+  float: right;
+  margin: 0 3% 0 1%;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background: #e67a7a;
+}
