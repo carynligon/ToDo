@@ -1,5 +1,8 @@
+@import "variables";
+
 body{
-  background: #decccc;
+  background: $secondary;
+  font-family: avenir;
 }
 header {
   height: 100px;
@@ -7,15 +10,16 @@ header {
   text-align: center;
   line-height: 100px;
   vertical-align: middle;
-  background: #e67a7a;
+  background: $primary;
   input {
     height: 25px;
     width: 80%;
     padding: 5px;
     border-radius: 5px;
+    border: 2px solid $white;
+    color: $primary;
     &:focus {
       outline: 0;
-      border: 2px solid #da4b4b;
     }
   }
 }
@@ -25,30 +29,67 @@ main {
   overflow: scroll;
 }
 
-#task-list {
+ul {
   padding: 0;
   margin: 0;
   li {
     width: 100%;
-    background: #fff;
+    background: $white;
     list-style-type: none;
-    padding: 1.5%;
-    border-bottom: 1px solid #decccc;
+    padding: 1.5% 1.5% 1.5% 2%;
+    border-bottom: 1px solid $secondary;
   }
 }
 
 i {
   float: right;
+  color: $primary;
 }
 
 .check {
   float: right;
-  margin: 0 3% 0 1%;
+  margin: 0 5% 0 1%;
+  background: $primary;
+  border: 0;
 }
 
 footer {
   height: 100px;
   width: 100%;
   text-align: center;
-  background: #e67a7a;
+  background: $primary;
+}
+
+#button-wrapper {
+  height: 40px;
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 5%;
+  input {
+    background: $white;
+    color: $primary;
+    border: 0;
+    height: 30px;
+    width: 70px;
+    line-height: 1.8rem;
+    font-size: .8rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  #button-wrapper {
+    width: 50%;
+    padding-top: 7%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #button-wrapper {
+    width: 100%;
+    padding-top: 10%;
+  }
 }
