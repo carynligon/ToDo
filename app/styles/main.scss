@@ -64,7 +64,7 @@ footer {
   height: 40px;
   width: 35%;
   margin: 0 auto;
-  padding-top: 5%;
+  padding-top: 3%;
   input {
     background: $white;
     color: $primary;
@@ -91,5 +91,15 @@ footer {
   #button-wrapper {
     width: 100%;
     padding-top: 10%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #task-list, #completed-list {
+    margin-top: 2%;
   }
 }
