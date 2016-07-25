@@ -34,6 +34,11 @@ header {
 main {
   height: 72vh;
   overflow: scroll;
+  h1 {
+    color: $white;
+    text-align: center;
+    line-height: 62vh;
+  }
 }
 
 ul {
