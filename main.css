@@ -28,6 +28,10 @@ header {
 main {
   height: 72vh;
   overflow: scroll; }
+  main h1 {
+    color: #fff;
+    text-align: center;
+    line-height: 62vh; }
 
 ul {
   padding: 0;
