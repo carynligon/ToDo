@@ -33,7 +33,7 @@ function renderPage() {
 }
 
 var getReq = {
-    url: 'http://tiny-za-server.herokuapp.com/collections/caryns-to-dos',
+    url: 'https://tiny-za-server.herokuapp.com/collections/caryns-to-dos',
     type: 'GET',
     dataType: 'json',
     success: function(response) {
@@ -46,7 +46,7 @@ var getReq = {
 function trashHandler(e) {
     var $deleteID = $(e.target).parent('li').attr('data-id');
     var deleteTask = {
-        url: 'http://tiny-za-server.herokuapp.com/collections/caryns-to-dos/' + $deleteID,
+        url: 'https://tiny-za-server.herokuapp.com/collections/caryns-to-dos/' + $deleteID,
         type: 'DELETE',
         dataType: 'json',
         success: function(response) {
@@ -60,7 +60,7 @@ function trashHandler(e) {
 function checkboxHandler(e) {
   var $checkedID = $(e.target).parent('li').attr('data-id');
   var checkboxPut = {
-    url: 'http://tiny-za-server.herokuapp.com/collections/caryns-to-dos/' + $checkedID,
+    url: 'https://tiny-za-server.herokuapp.com/collections/caryns-to-dos/' + $checkedID,
     type: 'PUT',
     dataType: 'json',
     success: function(response) {
@@ -77,7 +77,7 @@ function checkboxHandler(e) {
 function uncheckHandler(e) {
   var $checkedID = $(e.target).parent('li').attr('data-id');
   var checkboxPut = {
-    url: 'http://tiny-za-server.herokuapp.com/collections/caryns-to-dos/' + $checkedID,
+    url: 'https://tiny-za-server.herokuapp.com/collections/caryns-to-dos/' + $checkedID,
     type: 'PUT',
     dataType: 'json',
     success: function(response) {
@@ -128,7 +128,7 @@ $(document).ready(function() {
       if (evt.which === 13) {
           $userInput = $inputEl.val();
           $.ajax({
-              url: 'http://tiny-za-server.herokuapp.com/collections/caryns-to-dos',
+              url: 'https://tiny-za-server.herokuapp.com/collections/caryns-to-dos',
               type: 'POST',
               dataType: 'json',
               success: function(response) {
